@@ -2,7 +2,7 @@
 
 namespace App\DataTransferObject;
 
-class ProductCreateDTO
+class ProductCreateDTO extends BaseDTO
 {
 
     function __construct(
