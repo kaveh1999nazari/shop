@@ -10,7 +10,6 @@ class AuthService{
         if (! $token = auth('api')->attempt($data)) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
-
         return $this->respondWithToken($token);
     }
 
