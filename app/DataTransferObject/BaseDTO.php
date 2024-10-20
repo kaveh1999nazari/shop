@@ -2,19 +2,20 @@
 
 namespace App\DataTransferObject;
 
-abstract class BaseDTO
-{
-    final public static function fromArray(array $data): self
-    {
+abstract class BaseDTO {
+    final public static function fromArray(array $data): static {
         $reflection = new \ReflectionClass(static::class);
-        $properties = $reflection->getProperties();
-        $args = [];
+        $instance = $reflection->newInstanceWithoutConstructor();
 
-        foreach ($properties as $property) {
-            $name = $property->getName();
-            $args[] = $data[$name] ?? null;
+        foreach ($data as $property => $value) {
+            if ($reflection->hasProperty($property)) {
+                $prop = $reflection->getProperty($property);
+                $prop->setAccessible(true);
+                $prop->setValue($instance, $value);
+            }
         }
 
-        return $reflection->newInstanceArgs($args);
+        return $instance;
     }
 }
+
