@@ -2,9 +2,6 @@
 
 namespace App\Repository;
 
-use App\DataTransferObject\ProductCreateDTO;
-use App\DataTransferObject\ProductDTO;
-use App\DataTransferObject\ProductPriceDTO;
 use App\Models\Product;
 
 class ProductRepository
