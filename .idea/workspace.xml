@@ -4,35 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_10_20_24__3_55PM.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DataTransferObject/BaseDTO.php" afterDir="false" />
+    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="use fromArray">
       <change afterPath="$PROJECT_DIR$/app/Http/Requests/CartCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTransferObject/CartCreateDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTransferObject/CartCreateDTO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTransferObject/CategoryCreateDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTransferObject/CategoryCreateDTO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTransferObject/ProductCreateDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTransferObject/ProductCreateDTO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Category/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductStoreRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ProductRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/AuthService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Service/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/ProductService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/ApcWrapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Listener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +167,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/kaveh/PhpstormProjects/shop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -230,7 +213,7 @@
       <workItem from="1729413091904" duration="15893000" />
       <workItem from="1729489403169" duration="272000" />
       <workItem from="1729496176198" duration="982000" />
-      <workItem from="1729512459930" duration="205000" />
+      <workItem from="1729512459930" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="add env">
       <option name="closed" value="true" />
@@ -312,7 +295,55 @@
       <option name="project" value="LOCAL" />
       <updated>1729497025932</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="change file sys to public">
+      <option name="closed" value="true" />
+      <created>1729512763014</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512763014</updated>
+    </task>
+    <task id="LOCAL-00012" summary=".">
+      <option name="closed" value="true" />
+      <created>1729512771244</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512771244</updated>
+    </task>
+    <task id="LOCAL-00013" summary=".">
+      <option name="closed" value="true" />
+      <created>1729512803423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512803423</updated>
+    </task>
+    <task id="LOCAL-00014" summary="delete white spaces">
+      <option name="closed" value="true" />
+      <created>1729512839470</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512839470</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create new baseDTO">
+      <option name="closed" value="true" />
+      <created>1729512863591</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512863591</updated>
+    </task>
+    <task id="LOCAL-00016" summary="use fromArray">
+      <option name="closed" value="true" />
+      <created>1729512892669</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729512892669</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,8 +359,12 @@
     <MESSAGE value="remove product price route" />
     <MESSAGE value="remove mapper" />
     <MESSAGE value="delete product price" />
+    <MESSAGE value="change file sys to public" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="delete white spaces" />
+    <MESSAGE value="create new baseDTO" />
+    <MESSAGE value="use fromArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="use fromArray" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
