@@ -2,15 +2,19 @@
 
 namespace App\DataTransferObject;
 
-class ProductCreateDTO
-{
+use Illuminate\Http\UploadedFile;
 
-    function __construct(
+/**
+ * @property UploadedFile[] $images
+ */
+class ProductCreateDTO extends BaseDTO {
+    public function __construct(
         public string $name,
-        public ?string $description,
-        public ?array $images,
-        public int $categoryId,
+        public int $category_id,
         public array $options,
         public int $price,
-    ){}
+        public string $description = '',
+        public array $images = [],
+    ) {}
 }
+
