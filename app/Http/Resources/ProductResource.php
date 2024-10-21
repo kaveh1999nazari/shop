@@ -18,7 +18,7 @@ class ProductResource extends JsonResource
             'product_prices' => $this->productPrice->map(function($productPrice) {
                 return [
                     'id' => $productPrice->id,
-                    'options' => json_decode($productPrice->options,),
+                    'options' => $productPrice->options,
                     'price' => $productPrice->price,
                 ];
             }),
