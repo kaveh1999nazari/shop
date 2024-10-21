@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Cart;
 
 use App\DataTransferObject\CartCreateDTO;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CartCreateRequest;
 use App\Http\Resources\CartResource;
 use App\Service\CartService;
 use Illuminate\Http\Request;
@@ -20,15 +21,10 @@ class CartController extends Controller
     }
 
 
-    public function createCart(Request $request)
+    public function createCart(CartCreateRequest $request)
     {
-        $dto = new CartCreateDTO(
-            $request->input('user_id') ?? null,
-            $request->input('uuid') ?? null,
-            $request->input('product_price_id'),
-            $request->input('number', 1),
-            $request->input('total_price') ?? 0,
-        );
+        $data = $request->validated();
+        $dto = CartCreateDTO::fromArray($data);
         $cart = $this->cartService->create($dto);
         return CartResource::make($cart);
     }
