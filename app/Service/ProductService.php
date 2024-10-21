@@ -24,7 +24,7 @@ class ProductService
             'name' => $productCreateDTO->name,
             'description' => $productCreateDTO->description,
             'images' => $productCreateDTO->images,
-            'category_id' => $productCreateDTO->categoryId,
+            'category_id' => $productCreateDTO->category_id,
         ]);
 
         $possibleOptions = $this->cartesian($productCreateDTO->options);
