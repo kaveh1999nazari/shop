@@ -2,7 +2,7 @@
 
 namespace App\DataTransferObject;
 
-class CategoryCreateDTO
+class CategoryCreateDTO extends BaseDTO
 {
     function __construct(public string $name){}
 }
