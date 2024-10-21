@@ -42,7 +42,6 @@ Route::middleware(['auth:api', 'admin'])->group(function(){
     Route::get('/productoption', [ProductOptionController::class, 'getAllProductOptions']);
     Route::post('/productoption', [ProductOptionController::class, 'createProductOption']);
     Route::delete('/productoption/{id}', [ProductOptionController::class, 'deleteProductOptionById']);
-    Route::post('/productprice',[ProductPriceController::class,'createProduct']);
 });
 
 Route::controller(CartController::class)->group(function(){
