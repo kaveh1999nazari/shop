@@ -23,12 +23,12 @@
     &quot;assignee&quot;: &quot;kaveh1999nazari&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:kaveh1999nazari/shop.git",
-    "accountId": "7e3f7672-e4f6-4404-a31c-89e003fcacb0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:kaveh1999nazari/shop.git&quot;,
+    &quot;accountId&quot;: &quot;7e3f7672-e4f6-4404-a31c-89e003fcacb0&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
