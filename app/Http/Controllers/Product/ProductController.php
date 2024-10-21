@@ -7,7 +7,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductStoreRequest;
 use App\Http\Resources\ProductResource;
 use App\Service\ProductService;
-use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -24,14 +23,7 @@ class ProductController extends Controller
     public function create(ProductStoreRequest $request)
     {
         $data = $request->validated();
-        $dto = new ProductCreateDTO(
-            $data['name'],
-            $data['description'] ?? null,
-            $data['images'] ?? null,
-            $data['category_id'],
-            $data['options'],
-            $data['price'],
-        );
+        $dto = ProductCreateDTO::fromArray($data);
         $product = $this->productService->create($dto);
         return new ProductResource($product);
     }

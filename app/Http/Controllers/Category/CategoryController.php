@@ -21,9 +21,7 @@ class CategoryController extends Controller
     public function createCategory(CategoryCreateRequest $request)
     {
         $data = $request->validated();
-        $categoryDTO = new CategoryCreateDTO(
-            $data['name'],
-        );
+        $categoryDTO = CategoryCreateDTO::fromArray($data);
         $category = $this->categoryService->createCategory($categoryDTO);
         return CategoryResource::make($category);
     }
