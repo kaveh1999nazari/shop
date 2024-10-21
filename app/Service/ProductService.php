@@ -20,19 +20,23 @@ class ProductService
 
     public function create(ProductCreateDTO $productCreateDTO)
     {
-        $product = $this->productRepository->create([
-            'name' => $productCreateDTO->name,
-            'description' => $productCreateDTO->description,
-            'images' => $productCreateDTO->images,
-            'category_id' => $productCreateDTO->categoryId,
-        ]);
+        $imageFiles = [];
+        foreach ($productCreateDTO->images as $image)
+        {
+            $imageName = time().'.'.$image->getClientOriginalExtension();
+            $filePath = $image->storeAs('images', $imageName);
+            $imageFiles[] = $filePath;
+        }
+        $productCreateDTO->images = $imageFiles;
+
+        $product = $this->productRepository->create($productCreateDTO);
 
         $possibleOptions = $this->cartesian($productCreateDTO->options);
 
         foreach ($possibleOptions as $possibleOption) {
             $this->productPriceRepository->create([
                 'product_id' => $product->id,
-                'options' => json_encode($possibleOption),
+                'options' => $possibleOption,
                 'price' => $productCreateDTO->price,
             ]);
         }
