@@ -6,7 +6,6 @@ use App\DataTransferObject\ProductCreateDTO;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductStoreRequest;
 use App\Http\Resources\ProductResource;
-use App\mappers\ProductPrice\ProductPriceCreateMapper;
 use App\Service\ProductService;
 use Illuminate\Http\Request;
 
