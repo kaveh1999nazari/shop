@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\DataTransferObject\ProductCreateDTO;
 use App\Models\Product;
 
 class ProductRepository
@@ -12,10 +13,15 @@ class ProductRepository
         return Product::query()->with('productPrice')->get();
     }
 
-    public function create(array $data)
+    public function create(ProductCreateDTO $productCreateDTO)
     {
         return Product::query()
-            ->create($data);
+            ->create([
+                'name' => $productCreateDTO->name,
+                'description' => $productCreateDTO->description,
+                'images' => $productCreateDTO->images,
+                'category_id' => $productCreateDTO->category_id,
+            ]);
     }
 
     public function getById(int $id)
