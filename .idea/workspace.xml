@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="use fromArray">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CartCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTransferObject/CartCreateDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTransferObject/CartCreateDTO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTransferObject/CategoryCreateDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTransferObject/CategoryCreateDTO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTransferObject/ProductCreateDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTransferObject/ProductCreateDTO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Category/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ProductRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/ProductService.php" afterDir="false" />
+    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +203,7 @@
       <workItem from="1729413091904" duration="15893000" />
       <workItem from="1729489403169" duration="272000" />
       <workItem from="1729496176198" duration="982000" />
-      <workItem from="1729512459930" duration="529000" />
+      <workItem from="1729512459930" duration="3213000" />
     </task>
     <task id="LOCAL-00001" summary="add env">
       <option name="closed" value="true" />
@@ -343,7 +333,95 @@
       <option name="project" value="LOCAL" />
       <updated>1729512892669</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="delete additional variable">
+      <option name="closed" value="true" />
+      <created>1729513017812</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513017812</updated>
+    </task>
+    <task id="LOCAL-00018" summary="create new cart request">
+      <option name="closed" value="true" />
+      <created>1729513039531</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513039531</updated>
+    </task>
+    <task id="LOCAL-00019" summary="use fromArray">
+      <option name="closed" value="true" />
+      <created>1729513065613</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513065613</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add extends">
+      <option name="closed" value="true" />
+      <created>1729513095869</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513095869</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add casts">
+      <option name="closed" value="true" />
+      <created>1729513103271</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513103271</updated>
+    </task>
+    <task id="LOCAL-00022" summary="change locate of variables and change them">
+      <option name="closed" value="true" />
+      <created>1729513144803</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513144803</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add instance">
+      <option name="closed" value="true" />
+      <created>1729513170086</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513170086</updated>
+    </task>
+    <task id="LOCAL-00024" summary="delete json_decode">
+      <option name="closed" value="true" />
+      <created>1729513182578</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513182578</updated>
+    </task>
+    <task id="LOCAL-00025" summary="create locate for images">
+      <option name="closed" value="true" />
+      <created>1729513200818</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513200818</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add 'images.*'">
+      <option name="closed" value="true" />
+      <created>1729513228344</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513228344</updated>
+    </task>
+    <task id="LOCAL-00027" summary=".">
+      <option name="closed" value="true" />
+      <created>1729513233677</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729513233677</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,11 +438,20 @@
     <MESSAGE value="remove mapper" />
     <MESSAGE value="delete product price" />
     <MESSAGE value="change file sys to public" />
-    <MESSAGE value="." />
     <MESSAGE value="delete white spaces" />
     <MESSAGE value="create new baseDTO" />
+    <MESSAGE value="delete additional variable" />
+    <MESSAGE value="create new cart request" />
     <MESSAGE value="use fromArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="use fromArray" />
+    <MESSAGE value="add extends" />
+    <MESSAGE value="add casts" />
+    <MESSAGE value="change locate of variables and change them" />
+    <MESSAGE value="add instance" />
+    <MESSAGE value="delete json_decode" />
+    <MESSAGE value="create locate for images" />
+    <MESSAGE value="add 'images.*'" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
