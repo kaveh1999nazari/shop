@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('user_residents', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->string('address');
-            $table->string('postal_code');
-            $table->unsignedBigInteger('province_id');
-            $table->unsignedBigInteger('city_id');
+            $table->string('address')->nullable();
+            $table->string('postal_code')->nullable();
+            $table->unsignedBigInteger('province_id')->nullable();
+            $table->unsignedBigInteger('city_id')->nullable();
             $table->timestamps();
         });
     }
