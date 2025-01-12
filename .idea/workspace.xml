@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="create user_residents migration">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserResidentRegisterRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserResident.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/UserResidentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2025_01_12_103328_create_user_residents_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_01_12_103328_create_user_residents_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,71 +207,7 @@
       <workItem from="1729512459930" duration="3213000" />
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
-      <workItem from="1736670860412" duration="10165000" />
-    </task>
-    <task id="LOCAL-00002" summary="no change">
-      <option name="closed" value="true" />
-      <created>1729428871912</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1729428871912</updated>
-    </task>
-    <task id="LOCAL-00003" summary="clear the code">
-      <option name="closed" value="true" />
-      <created>1729428925222</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1729428925222</updated>
-    </task>
-    <task id="LOCAL-00004" summary="test">
-      <option name="closed" value="true" />
-      <created>1729428933370</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1729428933370</updated>
-    </task>
-    <task id="LOCAL-00005" summary="return to stable state">
-      <option name="closed" value="true" />
-      <created>1729436211702</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1729436211702</updated>
-    </task>
-    <task id="LOCAL-00006" summary="remove product price route">
-      <option name="closed" value="true" />
-      <created>1729496943276</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1729496943276</updated>
-    </task>
-    <task id="LOCAL-00007" summary=".">
-      <option name="closed" value="true" />
-      <created>1729496966363</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1729496966363</updated>
-    </task>
-    <task id="LOCAL-00008" summary="remove mapper">
-      <option name="closed" value="true" />
-      <created>1729496984057</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1729496984057</updated>
-    </task>
-    <task id="LOCAL-00009" summary="delete product price">
-      <option name="closed" value="true" />
-      <created>1729497017235</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1729497017235</updated>
+      <workItem from="1736670860412" duration="12124000" />
     </task>
     <task id="LOCAL-00010" summary=".">
       <option name="closed" value="true" />
@@ -609,19 +537,77 @@
       <option name="project" value="LOCAL" />
       <updated>1736681305161</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="create user_residents migration">
+      <option name="closed" value="true" />
+      <created>1736684072425</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1736684072425</updated>
+    </task>
+    <task id="LOCAL-00052" summary="create UserResidentController Route">
+      <option name="closed" value="true" />
+      <created>1736685483627</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1736685483628</updated>
+    </task>
+    <task id="LOCAL-00053" summary="create UserRepository">
+      <option name="closed" value="true" />
+      <created>1736685514365</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1736685514365</updated>
+    </task>
+    <task id="LOCAL-00054" summary="create UserResident Model">
+      <option name="closed" value="true" />
+      <created>1736685526204</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1736685526204</updated>
+    </task>
+    <task id="LOCAL-00055" summary="create UserResident Controller">
+      <option name="closed" value="true" />
+      <created>1736685534352</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1736685534352</updated>
+    </task>
+    <task id="LOCAL-00056" summary="create UserResidentRegister Request">
+      <option name="closed" value="true" />
+      <created>1736685544705</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1736685544705</updated>
+    </task>
+    <task id="LOCAL-00057" summary="create UserResident Repository">
+      <option name="closed" value="true" />
+      <created>1736685558687</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1736685558687</updated>
+    </task>
+    <task id="LOCAL-00058" summary=".">
+      <option name="closed" value="true" />
+      <created>1736686025936</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1736686025936</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete json_decode" />
-    <MESSAGE value="create locate for images" />
-    <MESSAGE value="add 'images.*'" />
-    <MESSAGE value="new V1.2.2" />
-    <MESSAGE value="update env for database" />
-    <MESSAGE value="remove add for migration" />
     <MESSAGE value="add new route for UserManagement" />
     <MESSAGE value="update migration for users table" />
     <MESSAGE value="update database name" />
@@ -636,12 +622,18 @@
     <MESSAGE value="create City model and CitySeeder" />
     <MESSAGE value="create Degree model and DegreeSeeder" />
     <MESSAGE value="create Province model and ProvinceSeeder" />
-    <MESSAGE value="." />
     <MESSAGE value="create provinces migration" />
     <MESSAGE value="create cities migration" />
     <MESSAGE value="create degrees migration" />
     <MESSAGE value="create user_residents migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="create user_residents migration" />
+    <MESSAGE value="create UserResidentController Route" />
+    <MESSAGE value="create UserRepository" />
+    <MESSAGE value="create UserResident Model" />
+    <MESSAGE value="create UserResident Controller" />
+    <MESSAGE value="create UserResidentRegister Request" />
+    <MESSAGE value="create UserResident Repository" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
