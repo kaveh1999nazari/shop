@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
@@ -52,17 +54,34 @@ class User extends Authenticatable implements JWTSubject
         ];
     }
 
-        // for JWT Token:
+    // for JWT Token:
     public function getJWTIdentifier()
-        {
-            return $this->getKey();
-        }
-    public function getJWTCustomClaims()
-        {
-            return [];
-        }
+    {
+        return $this->getKey();
+    }
 
-    public function cart(){
+    public function getJWTCustomClaims(): array
+    {
+        return [];
+    }
+
+    public function cart(): HasOne
+    {
         return $this->hasOne(Cart::class);
+    }
+
+    public function userEducations(): HasMany
+    {
+        return $this->hasMany(UserEducation::class);
+    }
+
+    public function userResidents(): HasMany
+    {
+        return $this->hasMany(UserResident::class);
+    }
+
+    public function userJobs(): HasMany
+    {
+        return $this->hasMany(UserJob::class);
     }
 }
