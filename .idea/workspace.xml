@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserEducationRegisterRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserJobRegisterRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,23 +215,7 @@
       <workItem from="1729512459930" duration="3213000" />
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
-      <workItem from="1736670860412" duration="13492000" />
-    </task>
-    <task id="LOCAL-00017" summary="delete additional variable">
-      <option name="closed" value="true" />
-      <created>1729513017812</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513017812</updated>
-    </task>
-    <task id="LOCAL-00018" summary="create new cart request">
-      <option name="closed" value="true" />
-      <created>1729513039531</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513039531</updated>
+      <workItem from="1736670860412" duration="15858000" />
     </task>
     <task id="LOCAL-00019" summary="use fromArray">
       <option name="closed" value="true" />
@@ -604,14 +593,29 @@
       <option name="project" value="LOCAL" />
       <updated>1736687828092</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="add user educations , jobs and residents relations in models">
+      <option name="closed" value="true" />
+      <created>1736688005574</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1736688005574</updated>
+    </task>
+    <task id="LOCAL-00067" summary=".">
+      <option name="closed" value="true" />
+      <created>1736688015042</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1736688015042</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update models User" />
     <MESSAGE value="create new UserManagementController in controller" />
     <MESSAGE value="update UserRegisterRequest requests" />
     <MESSAGE value="update name of UserRepository" />
@@ -635,6 +639,7 @@
     <MESSAGE value="create user jobs table" />
     <MESSAGE value="create User Education Models" />
     <MESSAGE value="create User Job Models" />
+    <MESSAGE value="add user educations , jobs and residents relations in models" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
