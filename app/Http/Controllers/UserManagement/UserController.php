@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRegisterRequest;
 use App\Repository\UserRepository;
 
-class UserManagementController extends Controller
+class UserController extends Controller
 {
 
     public function __construct(private readonly UserRepository $userRepository)
