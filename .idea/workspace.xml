@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="new V1.2.2">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserManagementController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/app/Models/City.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Degree.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Province.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/CitySeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/DegreeSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/ProvinceSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRegisterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/AuthRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_10_04_150102_add_role_to_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +214,7 @@
       <workItem from="1729512459930" duration="3213000" />
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
-      <workItem from="1736670860412" duration="3756000" />
+      <workItem from="1736670860412" duration="7189000" />
     </task>
     <task id="LOCAL-00001" summary="add env">
       <option name="closed" value="true" />
@@ -445,23 +440,109 @@
       <option name="project" value="LOCAL" />
       <updated>1735719955709</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update env for database">
+      <option name="closed" value="true" />
+      <created>1736678072042</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678072042</updated>
+    </task>
+    <task id="LOCAL-00030" summary="remove add for migration">
+      <option name="closed" value="true" />
+      <created>1736678086596</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678086596</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add new route for UserManagement">
+      <option name="closed" value="true" />
+      <created>1736678125096</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678125096</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update migration for users table">
+      <option name="closed" value="true" />
+      <created>1736678163523</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678163523</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update database name">
+      <option name="closed" value="true" />
+      <created>1736678189172</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678189172</updated>
+    </task>
+    <task id="LOCAL-00034" summary="new V2.0">
+      <option name="closed" value="true" />
+      <created>1736678200731</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678200731</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update models User">
+      <option name="closed" value="true" />
+      <created>1736678214374</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678214374</updated>
+    </task>
+    <task id="LOCAL-00036" summary="create new UserManagementController in controller">
+      <option name="closed" value="true" />
+      <created>1736678237423</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678237423</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update UserRegisterRequest requests">
+      <option name="closed" value="true" />
+      <created>1736678274766</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678274766</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update name of UserRepository">
+      <option name="closed" value="true" />
+      <created>1736678297573</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678297573</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update UserSeeder">
+      <option name="closed" value="true" />
+      <created>1736678310188</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678310188</updated>
+    </task>
+    <task id="LOCAL-00040" summary=".">
+      <option name="closed" value="true" />
+      <created>1736678319491</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678319491</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add env" />
-    <MESSAGE value="no change" />
-    <MESSAGE value="clear the code" />
-    <MESSAGE value="test" />
-    <MESSAGE value="return to stable state" />
-    <MESSAGE value="change to category_id" />
-    <MESSAGE value="remove product price route" />
-    <MESSAGE value="remove mapper" />
-    <MESSAGE value="delete product price" />
-    <MESSAGE value="change file sys to public" />
     <MESSAGE value="delete white spaces" />
     <MESSAGE value="create new baseDTO" />
     <MESSAGE value="delete additional variable" />
@@ -474,9 +555,20 @@
     <MESSAGE value="delete json_decode" />
     <MESSAGE value="create locate for images" />
     <MESSAGE value="add 'images.*'" />
-    <MESSAGE value="." />
     <MESSAGE value="new V1.2.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="new V1.2.2" />
+    <MESSAGE value="update env for database" />
+    <MESSAGE value="remove add for migration" />
+    <MESSAGE value="add new route for UserManagement" />
+    <MESSAGE value="update migration for users table" />
+    <MESSAGE value="update database name" />
+    <MESSAGE value="new V2.0" />
+    <MESSAGE value="update models User" />
+    <MESSAGE value="create new UserManagementController in controller" />
+    <MESSAGE value="update UserRegisterRequest requests" />
+    <MESSAGE value="update name of UserRepository" />
+    <MESSAGE value="update UserSeeder" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
