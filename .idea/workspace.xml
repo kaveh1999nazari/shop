@@ -7,7 +7,6 @@
     <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,39 +210,7 @@
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
       <workItem from="1736670860412" duration="15935000" />
-      <workItem from="1736741758080" duration="11295000" />
-    </task>
-    <task id="LOCAL-00029" summary="update env for database">
-      <option name="closed" value="true" />
-      <created>1736678072042</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678072042</updated>
-    </task>
-    <task id="LOCAL-00030" summary="remove add for migration">
-      <option name="closed" value="true" />
-      <created>1736678086596</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678086596</updated>
-    </task>
-    <task id="LOCAL-00031" summary="add new route for UserManagement">
-      <option name="closed" value="true" />
-      <created>1736678125096</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678125096</updated>
-    </task>
-    <task id="LOCAL-00032" summary="update migration for users table">
-      <option name="closed" value="true" />
-      <created>1736678163523</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678163523</updated>
+      <workItem from="1736741758080" duration="11666000" />
     </task>
     <task id="LOCAL-00033" summary="update database name">
       <option name="closed" value="true" />
@@ -605,16 +572,45 @@
       <option name="project" value="LOCAL" />
       <updated>1736753984658</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="add Listener in User Model for creating userResident and userEducation and userJob">
+      <option name="closed" value="true" />
+      <created>1736755975911</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1736755975911</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add Listener">
+      <option name="closed" value="true" />
+      <created>1736755988915</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1736755988915</updated>
+    </task>
+    <task id="LOCAL-00080" summary="add Event">
+      <option name="closed" value="true" />
+      <created>1736755997416</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1736755997416</updated>
+    </task>
+    <task id="LOCAL-00081" summary=".">
+      <option name="closed" value="true" />
+      <created>1736756002188</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1736756002188</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create Degree model and DegreeSeeder" />
-    <MESSAGE value="create Province model and ProvinceSeeder" />
-    <MESSAGE value="create provinces migration" />
     <MESSAGE value="create cities migration" />
     <MESSAGE value="create degrees migration" />
     <MESSAGE value="create user_residents migration" />
@@ -636,6 +632,9 @@
     <MESSAGE value="create UserEducation :&#10;Request, Controller, Repository, Model" />
     <MESSAGE value="create UserJob :&#10;Request, Controller, Repository, Model" />
     <MESSAGE value="fix problem for userNotFound" />
+    <MESSAGE value="add Listener in User Model for creating userResident and userEducation and userJob" />
+    <MESSAGE value="add Listener" />
+    <MESSAGE value="add Event" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
