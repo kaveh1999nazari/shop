@@ -14,9 +14,9 @@ class UserEducationRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "user_id" => "required|exists:users,id",
+            "user_id" => "required",
             "university" => "nullable|string",
-            "degree_id" => "nullable|exists:degrees,id",
+            "degree_id" => "nullable",
         ];
     }
 }

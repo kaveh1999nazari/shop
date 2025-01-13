@@ -6,7 +6,7 @@ use App\Models\UserEducation;
 
 class UserEducationRepository
 {
-    public function createEducation(array $data): UserEducation
+    public function create(array $data): UserEducation
     {
         return UserEducation::query()
                     ->create($data);
