@@ -6,7 +6,7 @@
 
 ---
 
-## Last Update: V2.0
+## Last Update: V2.0.1
 
 ### Framework:
 - Laravel Framework with RestAPI
@@ -22,8 +22,9 @@
   - With user personal education information
   - With user personal job information
 - **Login User:**
-    - With mobile and password.
-    - JWT-based User Authentication.
+    - With mobile and password
+    - With Email and OTP Code
+    - JWT-based User Authentication
 
 #### Docker:
 - Added Docker support and management.
