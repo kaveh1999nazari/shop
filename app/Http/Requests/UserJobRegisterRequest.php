@@ -14,9 +14,9 @@ class UserJobRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "user_id" => "required|exists:users,id",
-            "province_id" => "nullable|exists:provinces,id",
-            "city_id" => "nullable|exists:cities,id",
+            "user_id" => "required",
+            "province_id" => "nullable",
+            "city_id" => "nullable",
             "title" => "nullable|string",
             "phone" => "nullable|string",
             "address" => "nullable|string",
