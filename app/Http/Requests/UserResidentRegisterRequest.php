@@ -22,11 +22,11 @@ class UserResidentRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'user_id' => 'required|integer|exists:users,id',
+            'user_id' => 'required|integer',
             'address' => 'string|nullable',
             'postal_code' => 'string|nullable|numeric',
-            'province_id' => 'integer|exists:provinces,id|nullable',
-            'city_id' => 'integer|exists:cities,id|nullable',
+            'province_id' => 'integer|nullable',
+            'city_id' => 'integer|nullable',
         ];
     }
 
