@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,26 +155,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;PHPUnit.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feat/Update-User&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kaveh/PhpStorm/shop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "PHPUnit.Main.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feat/Add-Login",
+    "last_opened_file_path": "/home/kaveh/PhpStorm/shop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -210,22 +211,9 @@
       <workItem from="1735725507721" duration="10000" />
       <workItem from="1736670860412" duration="15935000" />
       <workItem from="1736741758080" duration="11666000" />
-    </task>
-    <task id="LOCAL-00033" summary="update database name">
-      <option name="closed" value="true" />
-      <created>1736678189172</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678189172</updated>
-    </task>
-    <task id="LOCAL-00034" summary="new V2.0">
-      <option name="closed" value="true" />
-      <created>1736678200731</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678200731</updated>
+      <workItem from="1736762642266" duration="1000" />
+      <workItem from="1736762948871" duration="33000" />
+      <workItem from="1736767997832" duration="1934000" />
     </task>
     <task id="LOCAL-00035" summary="update models User">
       <option name="closed" value="true" />
@@ -603,14 +591,29 @@
       <option name="project" value="LOCAL" />
       <updated>1736756002188</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="remove register action in AuthenticationController">
+      <option name="closed" value="true" />
+      <created>1736756370245</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1736756370245</updated>
+    </task>
+    <task id="LOCAL-00083" summary=".">
+      <option name="closed" value="true" />
+      <created>1736756374824</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1736756374824</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create cities migration" />
     <MESSAGE value="create degrees migration" />
     <MESSAGE value="create user_residents migration" />
     <MESSAGE value="create UserResidentController Route" />
@@ -634,6 +637,7 @@
     <MESSAGE value="add Listener in User Model for creating userResident and userEducation and userJob" />
     <MESSAGE value="add Listener" />
     <MESSAGE value="add Event" />
+    <MESSAGE value="remove register action in AuthenticationController" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
