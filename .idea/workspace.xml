@@ -7,6 +7,7 @@
     <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,15 +211,7 @@
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
       <workItem from="1736670860412" duration="15935000" />
-      <workItem from="1736741758080" duration="8863000" />
-    </task>
-    <task id="LOCAL-00028" summary="new V1.2.2">
-      <option name="closed" value="true" />
-      <created>1735719955709</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1735719955709</updated>
+      <workItem from="1736741758080" duration="11295000" />
     </task>
     <task id="LOCAL-00029" summary="update env for database">
       <option name="closed" value="true" />
@@ -604,7 +597,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736752994019</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary=".">
+      <option name="closed" value="true" />
+      <created>1736753984658</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1736753984658</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
