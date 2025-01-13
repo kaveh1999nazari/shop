@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotFoundDegree.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotFoundUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotMatchProvinceCity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserEducationRegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserEducationRegisterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserJobRegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserJobRegisterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserResidentRegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserResidentRegisterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/UserEducation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserEducation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,55 +210,7 @@
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
       <workItem from="1736670860412" duration="15935000" />
-      <workItem from="1736741758080" duration="8415000" />
-    </task>
-    <task id="LOCAL-00022" summary="change locate of variables and change them">
-      <option name="closed" value="true" />
-      <created>1729513144803</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513144803</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add instance">
-      <option name="closed" value="true" />
-      <created>1729513170086</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513170086</updated>
-    </task>
-    <task id="LOCAL-00024" summary="delete json_decode">
-      <option name="closed" value="true" />
-      <created>1729513182578</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513182578</updated>
-    </task>
-    <task id="LOCAL-00025" summary="create locate for images">
-      <option name="closed" value="true" />
-      <created>1729513200818</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513200818</updated>
-    </task>
-    <task id="LOCAL-00026" summary="add 'images.*'">
-      <option name="closed" value="true" />
-      <created>1729513228344</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513228344</updated>
-    </task>
-    <task id="LOCAL-00027" summary=".">
-      <option name="closed" value="true" />
-      <created>1729513233677</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513233677</updated>
+      <workItem from="1736741758080" duration="8863000" />
     </task>
     <task id="LOCAL-00028" summary="new V1.2.2">
       <option name="closed" value="true" />
@@ -617,18 +556,61 @@
       <option name="project" value="LOCAL" />
       <updated>1736690389078</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="create Endpoints:&#10;UserJobController , UserEducationController">
+      <option name="closed" value="true" />
+      <created>1736752819892</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752819892</updated>
+    </task>
+    <task id="LOCAL-00072" summary="create Exception for User, Degree, ProvinceCity">
+      <option name="closed" value="true" />
+      <created>1736752857147</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752857148</updated>
+    </task>
+    <task id="LOCAL-00073" summary="create UserEducation :&#10;Request, Controller, Repository, Model">
+      <option name="closed" value="true" />
+      <created>1736752959737</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752959737</updated>
+    </task>
+    <task id="LOCAL-00074" summary="create UserJob :&#10;Request, Controller, Repository, Model">
+      <option name="closed" value="true" />
+      <created>1736752971425</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752971425</updated>
+    </task>
+    <task id="LOCAL-00075" summary="fix problem for userNotFound">
+      <option name="closed" value="true" />
+      <created>1736752987534</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752987534</updated>
+    </task>
+    <task id="LOCAL-00076" summary=".">
+      <option name="closed" value="true" />
+      <created>1736752994019</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752994019</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update name of UserRepository" />
-    <MESSAGE value="update UserSeeder" />
-    <MESSAGE value="add UserController in route" />
-    <MESSAGE value="create users in UserController" />
-    <MESSAGE value="create City model and CitySeeder" />
     <MESSAGE value="create Degree model and DegreeSeeder" />
     <MESSAGE value="create Province model and ProvinceSeeder" />
     <MESSAGE value="create provinces migration" />
@@ -648,6 +630,11 @@
     <MESSAGE value="add user educations , jobs and residents relations in models" />
     <MESSAGE value="create UserEducation Controller - Request - Repository" />
     <MESSAGE value="create UserJob Controller - Request - Repository" />
+    <MESSAGE value="create Endpoints:&#10;UserJobController , UserEducationController" />
+    <MESSAGE value="create Exception for User, Degree, ProvinceCity" />
+    <MESSAGE value="create UserEducation :&#10;Request, Controller, Repository, Model" />
+    <MESSAGE value="create UserJob :&#10;Request, Controller, Repository, Model" />
+    <MESSAGE value="fix problem for userNotFound" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
