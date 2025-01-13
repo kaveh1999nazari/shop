@@ -10,6 +10,8 @@ use App\Http\Controllers\Product\Option\ProductOptionController;
 use App\Http\Controllers\Product\ProductController;
 use App\Http\Controllers\Product\Price\ProductPriceController;
 use App\Http\Controllers\UserManagement\UserController;
+use App\Http\Controllers\UserManagement\UserEducationController;
+use App\Http\Controllers\UserManagement\UserJobController;
 use App\Http\Controllers\UserManagement\UserResidentController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +26,14 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(UserResidentController::class)->group(function (){
     Route::post('/register/residents', 'createResident');
+});
+
+Route::controller(UserEducationController::class)->group(function(){
+   Route::post('/register/educations', 'createEducation');
+});
+
+Route::controller(UserJobController::class)->group(function(){
+    Route::post('/register/jobs', 'createJob');
 });
 
 Route::controller(CategoryController::class)->group(function(){
