@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserEducationRegisterRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserJobRegisterRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotFoundDegree.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotFoundUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotMatchProvinceCity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserEducationRegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserEducationRegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserJobRegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserJobRegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserResidentRegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserResidentRegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/UserEducation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserEducation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,26 +168,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHPUnit.Main.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feat/Update-User",
-    "last_opened_file_path": "/home/kaveh/PhpStorm/shop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHPUnit.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/Update-User&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kaveh/PhpStorm/shop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -215,31 +222,8 @@
       <workItem from="1729512459930" duration="3213000" />
       <workItem from="1735719276600" duration="1722000" />
       <workItem from="1735725507721" duration="10000" />
-      <workItem from="1736670860412" duration="15858000" />
-    </task>
-    <task id="LOCAL-00019" summary="use fromArray">
-      <option name="closed" value="true" />
-      <created>1729513065613</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513065613</updated>
-    </task>
-    <task id="LOCAL-00020" summary="add extends">
-      <option name="closed" value="true" />
-      <created>1729513095869</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513095869</updated>
-    </task>
-    <task id="LOCAL-00021" summary="add casts">
-      <option name="closed" value="true" />
-      <created>1729513103271</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1729513103271</updated>
+      <workItem from="1736670860412" duration="15935000" />
+      <workItem from="1736741758080" duration="8415000" />
     </task>
     <task id="LOCAL-00022" summary="change locate of variables and change them">
       <option name="closed" value="true" />
@@ -609,15 +593,37 @@
       <option name="project" value="LOCAL" />
       <updated>1736688015042</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="create UserEducation Controller - Request - Repository">
+      <option name="closed" value="true" />
+      <created>1736690372151</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1736690372151</updated>
+    </task>
+    <task id="LOCAL-00069" summary="create UserJob Controller - Request - Repository">
+      <option name="closed" value="true" />
+      <created>1736690383898</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1736690383898</updated>
+    </task>
+    <task id="LOCAL-00070" summary=".">
+      <option name="closed" value="true" />
+      <created>1736690389078</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1736690389078</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create new UserManagementController in controller" />
-    <MESSAGE value="update UserRegisterRequest requests" />
     <MESSAGE value="update name of UserRepository" />
     <MESSAGE value="update UserSeeder" />
     <MESSAGE value="add UserController in route" />
@@ -640,6 +646,8 @@
     <MESSAGE value="create User Education Models" />
     <MESSAGE value="create User Job Models" />
     <MESSAGE value="add user educations , jobs and residents relations in models" />
+    <MESSAGE value="create UserEducation Controller - Request - Repository" />
+    <MESSAGE value="create UserJob Controller - Request - Repository" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
