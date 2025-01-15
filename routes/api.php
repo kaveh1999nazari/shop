@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(AuthenticationController::class)->group(function () {
     Route::post('/auth', 'verifyEmail');
-    Route::post('/auth/register', 'register');
     Route::post('/auth/login', 'login');
+    Route::post('/auth/register', 'register');
+//    Route::post('/auth/login', 'login');
 });
 
 Route::controller(UserController::class)->group(function () {
