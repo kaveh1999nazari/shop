@@ -15,41 +15,42 @@ use App\Http\Controllers\UserManagement\UserJobController;
 use App\Http\Controllers\UserManagement\UserResidentController;
 use Illuminate\Support\Facades\Route;
 
-Route::controller(AuthenticationController::class)->group(function(){
+Route::controller(AuthenticationController::class)->group(function () {
+    Route::post('/auth', 'verifyEmail');
     Route::post('/auth/register', 'register');
-    Route::post('/auth', 'login');
+    Route::post('/auth/login', 'login');
 });
 
-Route::controller(UserController::class)->group(function(){
+Route::controller(UserController::class)->group(function () {
     Route::post('/register', 'register');
 });
 
-Route::controller(UserResidentController::class)->group(function (){
+Route::controller(UserResidentController::class)->group(function () {
     Route::post('/register/residents', 'createResident');
 });
 
-Route::controller(UserEducationController::class)->group(function(){
-   Route::post('/register/educations', 'createEducation');
+Route::controller(UserEducationController::class)->group(function () {
+    Route::post('/register/educations', 'createEducation');
 });
 
-Route::controller(UserJobController::class)->group(function(){
+Route::controller(UserJobController::class)->group(function () {
     Route::post('/register/jobs', 'createJob');
 });
 
-Route::controller(CategoryController::class)->group(function(){
+Route::controller(CategoryController::class)->group(function () {
     Route::get('/category', 'findAll');
     Route::get('/category/{name}', 'findByName');
 });
 
-Route::controller(ProductController::class)->group(function(){
+Route::controller(ProductController::class)->group(function () {
     Route::get('/product', 'getAll');
     Route::get('/product/{id}', 'getById');
 });
 
-Route::middleware(['auth:api', 'admin'])->group(function(){
+Route::middleware(['auth:api', 'admin'])->group(function () {
     Route::post('/category', [CategoryController::class, 'createCategory']);
-    Route::put('/category/{name}',[CategoryController::class, 'updateCategoryByName']);
-    Route::delete('/category/{name}',[CategoryController::class, 'deleteCategoryByName']);
+    Route::put('/category/{name}', [CategoryController::class, 'updateCategoryByName']);
+    Route::delete('/category/{name}', [CategoryController::class, 'deleteCategoryByName']);
     Route::post('/product', [ProductController::class, 'create']);
     Route::put('/product/{id}', [ProductController::class, 'updateProductById']);
     Route::delete('/product/{name}', [ProductController::class, 'deleteProductByName']);
@@ -64,13 +65,13 @@ Route::middleware(['auth:api', 'admin'])->group(function(){
     Route::delete('/productoption/{id}', [ProductOptionController::class, 'deleteProductOptionById']);
 });
 
-Route::controller(CartController::class)->group(function(){
+Route::controller(CartController::class)->group(function () {
     Route::get('/cart', 'listCart');
     Route::post('/cart', 'createCart');
     Route::delete('/cart', 'deleteCart');
 });
 
-Route::controller(OrderController::class)->group(function(){
+Route::controller(OrderController::class)->group(function () {
     Route::post('/order', 'createOrder');
     Route::get('/order', 'listOrder');
 });
