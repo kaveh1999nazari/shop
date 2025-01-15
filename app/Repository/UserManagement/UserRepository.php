@@ -28,4 +28,14 @@ class UserRepository
             ->first();
     }
 
+    public function createOtp(string $email): int
+    {
+        return User::query()
+            ->where('email', $email)
+            ->update([
+                'otp_code' => rand(100000, 999999),
+                'otp_expired_at' => now()->addMinutes(3)
+            ]);
+    }
+
 }
