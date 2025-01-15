@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="new V2.0.1">
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/NotExistEmail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AuthVerifyEmailRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="create Notification for sending Email">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AuthLoginRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserEducationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserManagement/UserEducationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserJobRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserManagement/UserJobRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserManagement/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserResidentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserManagement/UserResidentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/UserManagement/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/UserManagement/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Service/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/AuthService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
@@ -169,26 +159,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;PHPUnit.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feat/Add-Login&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kaveh/PhpStorm/shop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "PHPUnit.Main.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feat/Add-Login",
+    "last_opened_file_path": "/home/kaveh/PhpStorm/api-getway",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -228,79 +218,7 @@
       <workItem from="1736762642266" duration="1000" />
       <workItem from="1736762948871" duration="33000" />
       <workItem from="1736767997832" duration="3351000" />
-      <workItem from="1736913044121" duration="7844000" />
-    </task>
-    <task id="LOCAL-00037" summary="update UserRegisterRequest requests">
-      <option name="closed" value="true" />
-      <created>1736678274766</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678274766</updated>
-    </task>
-    <task id="LOCAL-00038" summary="update name of UserRepository">
-      <option name="closed" value="true" />
-      <created>1736678297573</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678297573</updated>
-    </task>
-    <task id="LOCAL-00039" summary="update UserSeeder">
-      <option name="closed" value="true" />
-      <created>1736678310188</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678310188</updated>
-    </task>
-    <task id="LOCAL-00040" summary=".">
-      <option name="closed" value="true" />
-      <created>1736678319491</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1736678319491</updated>
-    </task>
-    <task id="LOCAL-00041" summary="add UserController in route">
-      <option name="closed" value="true" />
-      <created>1736681183163</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681183163</updated>
-    </task>
-    <task id="LOCAL-00042" summary="create users in UserController">
-      <option name="closed" value="true" />
-      <created>1736681204383</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681204383</updated>
-    </task>
-    <task id="LOCAL-00043" summary="create City model and CitySeeder">
-      <option name="closed" value="true" />
-      <created>1736681229420</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681229420</updated>
-    </task>
-    <task id="LOCAL-00044" summary="create Degree model and DegreeSeeder">
-      <option name="closed" value="true" />
-      <created>1736681240839</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681240839</updated>
-    </task>
-    <task id="LOCAL-00045" summary="create Province model and ProvinceSeeder">
-      <option name="closed" value="true" />
-      <created>1736681254715</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681254715</updated>
+      <workItem from="1736913044121" duration="10910000" />
     </task>
     <task id="LOCAL-00046" summary=".">
       <option name="closed" value="true" />
@@ -622,21 +540,85 @@
       <option name="project" value="LOCAL" />
       <updated>1736774152417</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="add Mialer Config">
+      <option name="closed" value="true" />
+      <created>1736923213837</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923213838</updated>
+    </task>
+    <task id="LOCAL-00087" summary="add route verifyEmail action for AuthenticationController">
+      <option name="closed" value="true" />
+      <created>1736923246032</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923246032</updated>
+    </task>
+    <task id="LOCAL-00088" summary="create verifyEmail action for AuthenticationController">
+      <option name="closed" value="true" />
+      <created>1736923268002</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923268002</updated>
+    </task>
+    <task id="LOCAL-00089" summary="create checkEmailExist and findUserByEmail action for AuthService">
+      <option name="closed" value="true" />
+      <created>1736923294817</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923294817</updated>
+    </task>
+    <task id="LOCAL-00090" summary="create AuthVerifyEmailRequest">
+      <option name="closed" value="true" />
+      <created>1736923306474</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923306474</updated>
+    </task>
+    <task id="LOCAL-00091" summary="change Directory all repository User to UserManagement">
+      <option name="closed" value="true" />
+      <created>1736923368654</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923368654</updated>
+    </task>
+    <task id="LOCAL-00092" summary="change Directory all repository User to UserManagement">
+      <option name="closed" value="true" />
+      <created>1736923379224</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923379224</updated>
+    </task>
+    <task id="LOCAL-00093" summary="create Exception for NotExistEmail">
+      <option name="closed" value="true" />
+      <created>1736923399266</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923399266</updated>
+    </task>
+    <task id="LOCAL-00094" summary="create Notification for sending Email">
+      <option name="closed" value="true" />
+      <created>1736923428897</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1736923428897</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create user_residents migration" />
-    <MESSAGE value="create UserResidentController Route" />
-    <MESSAGE value="create UserRepository" />
-    <MESSAGE value="create UserResident Model" />
-    <MESSAGE value="create UserResident Controller" />
-    <MESSAGE value="create UserResidentRegister Request" />
-    <MESSAGE value="create UserResident Repository" />
-    <MESSAGE value="create user education table" />
     <MESSAGE value="create user jobs table" />
     <MESSAGE value="create User Education Models" />
     <MESSAGE value="create User Job Models" />
@@ -654,7 +636,15 @@
     <MESSAGE value="remove register action in AuthenticationController" />
     <MESSAGE value="." />
     <MESSAGE value="new V2.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="new V2.0.1" />
+    <MESSAGE value="add Mialer Config" />
+    <MESSAGE value="add route verifyEmail action for AuthenticationController" />
+    <MESSAGE value="create verifyEmail action for AuthenticationController" />
+    <MESSAGE value="create checkEmailExist and findUserByEmail action for AuthService" />
+    <MESSAGE value="create AuthVerifyEmailRequest" />
+    <MESSAGE value="change Directory all repository User to UserManagement" />
+    <MESSAGE value="create Exception for NotExistEmail" />
+    <MESSAGE value="create Notification for sending Email" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Notification for sending Email" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
