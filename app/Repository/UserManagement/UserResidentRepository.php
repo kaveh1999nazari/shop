@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repository;
+namespace App\Repository\UserManagement;
 
 use App\Models\City;
 use App\Models\UserResident;

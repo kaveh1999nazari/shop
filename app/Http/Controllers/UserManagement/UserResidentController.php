@@ -7,9 +7,8 @@ use App\Exceptions\NotMatchProvinceCity;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserResidentRegisterRequest;
 use App\Models\City;
-use App\Models\Province;
 use App\Models\User;
-use App\Repository\UserResidentRepository;
+use App\Repository\UserManagement\UserResidentRepository;
 
 class UserResidentController extends Controller
 {

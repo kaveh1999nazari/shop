@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserEducationRegisterRequest;
 use App\Models\Degree;
 use App\Models\User;
-use App\Repository\UserEducationRepository;
+use App\Repository\UserManagement\UserEducationRepository;
 use Illuminate\Http\JsonResponse;
 
 class UserEducationController extends Controller

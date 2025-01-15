@@ -4,7 +4,7 @@ namespace App\Http\Controllers\UserManagement;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRegisterRequest;
-use App\Repository\UserRepository;
+use App\Repository\UserManagement\UserRepository;
 
 class UserController extends Controller
 {

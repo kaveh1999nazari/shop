@@ -8,8 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserJobRegisterRequest;
 use App\Models\City;
 use App\Models\User;
-use App\Models\UserJob;
-use App\Repository\UserJobRepository;
+use App\Repository\UserManagement\UserJobRepository;
 use Illuminate\Http\JsonResponse;
 
 class UserJobController extends Controller
