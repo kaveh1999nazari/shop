@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Authentication\AuthenticationController;
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Cart\CartController;
 use App\Http\Controllers\Category\CategoryController;
 use App\Http\Controllers\Options\OptionController;
@@ -9,32 +9,30 @@ use App\Http\Controllers\Order\OrderController;
 use App\Http\Controllers\Product\Option\ProductOptionController;
 use App\Http\Controllers\Product\ProductController;
 use App\Http\Controllers\Product\Price\ProductPriceController;
-use App\Http\Controllers\UserManagement\UserController;
-use App\Http\Controllers\UserManagement\UserEducationController;
-use App\Http\Controllers\UserManagement\UserJobController;
-use App\Http\Controllers\UserManagement\UserResidentController;
+use App\Http\Controllers\Users\UsersController;
+use App\Http\Controllers\Users\UsersEducationController;
+use App\Http\Controllers\Users\UsersJobController;
+use App\Http\Controllers\Users\UsersResidentController;
 use Illuminate\Support\Facades\Route;
 
-Route::controller(AuthenticationController::class)->group(function () {
+Route::controller(AuthController::class)->group(function () {
     Route::post('/auth', 'verifyEmail');
-    Route::post('/auth/login', 'login');
-    Route::post('/auth/register', 'register');
-//    Route::post('/auth/login', 'login');
+    Route::post('/auth/confirm', 'confirmEmail');
 });
 
-Route::controller(UserController::class)->group(function () {
+Route::controller(UsersController::class)->group(function () {
     Route::post('/register', 'register');
 });
 
-Route::controller(UserResidentController::class)->group(function () {
+Route::controller(UsersResidentController::class)->group(function () {
     Route::post('/register/residents', 'createResident');
 });
 
-Route::controller(UserEducationController::class)->group(function () {
+Route::controller(UsersEducationController::class)->group(function () {
     Route::post('/register/educations', 'createEducation');
 });
 
-Route::controller(UserJobController::class)->group(function () {
+Route::controller(UsersJobController::class)->group(function () {
     Route::post('/register/jobs', 'createJob');
 });
 
