@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repository\UserManagement;
+namespace App\Repository\Users;
 
 use App\Models\User;
 
 
-class UserRepository
+class UsersRepository
 {
     public function Register(array $data): User
     {
@@ -36,6 +36,14 @@ class UserRepository
                 'otp_code' => rand(100000, 999999),
                 'otp_expired_at' => now()->addMinutes(3)
             ]);
+    }
+
+    public function confirmOtp(array $data)
+    {
+        return User::query()
+            ->where('email', $data['email'])
+            ->where('otp_code', $data['otp_code'])
+            ->first();
     }
 
 }

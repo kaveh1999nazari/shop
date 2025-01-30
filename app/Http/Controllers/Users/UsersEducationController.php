@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\UserManagement;
+namespace App\Http\Controllers\Users;
 
 use App\Exceptions\NotFoundDegree;
 use App\Exceptions\NotFoundUser;
@@ -8,10 +8,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserEducationRegisterRequest;
 use App\Models\Degree;
 use App\Models\User;
-use App\Repository\UserManagement\UserEducationRepository;
+use App\Repository\Users\UserEducationRepository;
 use Illuminate\Http\JsonResponse;
 
-class UserEducationController extends Controller
+class UsersEducationController extends Controller
 {
     public function __construct(private readonly UserEducationRepository $userEducationRepository)
     {

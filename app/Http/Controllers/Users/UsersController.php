@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\UserManagement;
+namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRegisterRequest;
-use App\Repository\UserManagement\UserRepository;
+use App\Repository\Users\UsersRepository;
 
-class UserController extends Controller
+class UsersController extends Controller
 {
 
-    public function __construct(private readonly UserRepository $userRepository)
+    public function __construct(private readonly UsersRepository $userRepository)
     {
     }
 

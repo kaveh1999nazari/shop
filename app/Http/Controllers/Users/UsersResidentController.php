@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\UserManagement;
+namespace App\Http\Controllers\Users;
 
 use App\Exceptions\NotFoundUser;
 use App\Exceptions\NotMatchProvinceCity;
@@ -8,9 +8,9 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserResidentRegisterRequest;
 use App\Models\City;
 use App\Models\User;
-use App\Repository\UserManagement\UserResidentRepository;
+use App\Repository\Users\UserResidentRepository;
 
-class UserResidentController extends Controller
+class UsersResidentController extends Controller
 {
     public function __construct(private readonly UserResidentRepository $residentRepository)
     {

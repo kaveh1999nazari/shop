@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\UserManagement;
+namespace App\Http\Controllers\Users;
 
 use App\Exceptions\NotFoundUser;
 use App\Exceptions\NotMatchProvinceCity;
@@ -8,10 +8,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UserJobRegisterRequest;
 use App\Models\City;
 use App\Models\User;
-use App\Repository\UserManagement\UserJobRepository;
+use App\Repository\Users\UserJobRepository;
 use Illuminate\Http\JsonResponse;
 
-class UserJobController extends Controller
+class UsersJobController extends Controller
 {
 
     public function __construct(private readonly UserJobRepository $userJobRepository)
