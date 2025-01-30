@@ -41,12 +41,16 @@ class AuthController extends Controller
     public function confirmEmail(Request $request): JsonResponse
     {
         $data = $request->only('email', 'otp_code');
+
+        /** @returns AuthService */
         return $this->authService->loginByEmail($data);
     }
 
     public function login(Request $request): JsonResponse
     {
         $data = $request->only('mobile', 'password');
+
+        /** @returns AuthService */
         return $this->authService->login($data);
     }
 }
