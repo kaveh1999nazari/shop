@@ -4,13 +4,13 @@ namespace App\Service;
 
 
 use App\Models\User;
-use App\Repository\UserManagement\UserRepository;
+use App\Repository\Users\UsersRepository;
 use Illuminate\Http\JsonResponse;
 
 class AuthService
 {
 
-    public function __construct(private readonly UserRepository $userRepository)
+    public function __construct(private readonly UsersRepository $userRepository)
     {
     }
 
@@ -24,24 +24,29 @@ class AuthService
         return $this->userRepository->findUser($email);
     }
 
-    public function createOtp(string $email)
+    public function createOtp(string $email): int
     {
         return $this->userRepository->createOtp($email);
     }
 
-    public function login(array $data): JsonResponse
-    {
-        if (!$token = auth('api')->attempt($data)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
-        }
-        return $this->respondWithToken($token);
-    }
+//    public function login(array $data): JsonResponse
+//    {
+//        if (!$token = auth('api')->attempt($data)) {
+//            return response()->json(['error' => 'Unauthorized'], 401);
+//        }
+//        return $this->respondWithToken($token);
+//    }
 
     public function loginByEmail(array $data): JsonResponse
     {
-        if (!$token = auth('api')->attempt($data)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+        $user = $this->userRepository->confirmOtp($data);
+
+        if (!$user) {
+            return response()->json(['error' => 'Invalid OTP'], 401);
         }
+
+        $token = auth('api')->login($user);
+
         return $this->respondWithToken($token);
     }
 

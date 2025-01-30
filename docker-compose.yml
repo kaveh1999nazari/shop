@@ -16,10 +16,10 @@ services:
     depends_on:
       - db
     networks:
-      - laravel-network 
+      - laravel-network
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_DATABASE: 'laravel1'
@@ -31,7 +31,7 @@ services:
     secrets:
       - mysql_root_password
     networks:
-      - laravel-network  
+      - laravel-network
 
 volumes:
   my-db:
@@ -42,4 +42,4 @@ networks:
 secrets:
   mysql_root_password:
     file: ./mysql_root_password.txt
-  
+

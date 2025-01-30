@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Authentication;
+namespace App\Http\Controllers\Auth;
 
 use App\Exceptions\NotExistEmail;
 use App\Http\Controllers\Controller;
@@ -12,21 +12,19 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
 
-class AuthenticationController extends Controller
+class AuthController extends Controller
 {
     function __construct(private readonly AuthService $authService)
     {
     }
 
-    /**
-     * @throws NotExistEmail
-     */
     public function verifyEmail(AuthVerifyEmailRequest $request): JsonResponse
     {
         if ($this->authService->checkEmailExist($request->email) === true) {
 
             $this->authService->createOtp($request->email);
 
+            /** @var AuthService $user */
             $user = $this->authService->findUserByEmail($request->email);
 
             Notification::send($user, new sendOtpNotification($user->otp_code));
@@ -40,9 +38,10 @@ class AuthenticationController extends Controller
         }
     }
 
-    public function login(AuthLoginRequest $request): JsonResponse
+    public function confirmEmail(Request $request): JsonResponse
     {
-        return $this->authService->loginByEmail($request->validated());
+        $data = $request->only('email', 'otp_code');
+        return $this->authService->loginByEmail($data);
     }
 
 //    public function login(Request $request)
