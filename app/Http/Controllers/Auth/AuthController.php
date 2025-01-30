@@ -44,9 +44,9 @@ class AuthController extends Controller
         return $this->authService->loginByEmail($data);
     }
 
-//    public function login(Request $request)
-//    {
-//        $data = $request->only('mobile', 'password');
-//        return $this->authService->login($data);
-//    }
+    public function login(Request $request): JsonResponse
+    {
+        $data = $request->only('mobile', 'password');
+        return $this->authService->login($data);
+    }
 }

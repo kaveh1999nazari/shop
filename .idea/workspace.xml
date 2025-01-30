@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="create Notification for sending Email">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="b9ac1555-392d-4acf-b0ce-872a94d2a62d" name="Changes" comment="fix names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Authentication/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserEducationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/UsersEducationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserJobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/UsersJobController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserManagement/UserResidentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/UsersResidentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AuthLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AuthLoginRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserManagement/UserEducationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Users/UserEducationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserManagement/UserJobRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Users/UserJobRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserManagement/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Users/UsersRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/UserManagement/UserResidentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/Users/UserResidentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Service/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service/AuthService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,39 +222,7 @@
       <workItem from="1736762948871" duration="33000" />
       <workItem from="1736767997832" duration="3351000" />
       <workItem from="1736913044121" duration="10910000" />
-      <workItem from="1738237416879" duration="6246000" />
-    </task>
-    <task id="LOCAL-00046" summary=".">
-      <option name="closed" value="true" />
-      <created>1736681259499</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681259499</updated>
-    </task>
-    <task id="LOCAL-00047" summary="create provinces migration">
-      <option name="closed" value="true" />
-      <created>1736681276554</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681276554</updated>
-    </task>
-    <task id="LOCAL-00048" summary="create cities migration">
-      <option name="closed" value="true" />
-      <created>1736681282485</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681282485</updated>
-    </task>
-    <task id="LOCAL-00049" summary="create degrees migration">
-      <option name="closed" value="true" />
-      <created>1736681290985</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1736681290985</updated>
+      <workItem from="1738237416879" duration="6868000" />
     </task>
     <task id="LOCAL-00050" summary="create user_residents migration">
       <option name="closed" value="true" />
@@ -629,17 +584,45 @@
       <option name="project" value="LOCAL" />
       <updated>1736923428897</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="update env to docker">
+      <option name="closed" value="true" />
+      <created>1738244808694</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1738244808695</updated>
+    </task>
+    <task id="LOCAL-00096" summary="add confirmEmail method in AuthController">
+      <option name="closed" value="true" />
+      <created>1738244855980</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1738244855980</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add confirmEmail method in AuthController and AuthService">
+      <option name="closed" value="true" />
+      <created>1738244914837</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1738244914837</updated>
+    </task>
+    <task id="LOCAL-00098" summary="fix names">
+      <option name="closed" value="true" />
+      <created>1738244937276</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1738244937276</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create user jobs table" />
-    <MESSAGE value="create User Education Models" />
-    <MESSAGE value="create User Job Models" />
-    <MESSAGE value="add user educations , jobs and residents relations in models" />
     <MESSAGE value="create UserEducation Controller - Request - Repository" />
     <MESSAGE value="create UserJob Controller - Request - Repository" />
     <MESSAGE value="create Endpoints:&#10;UserJobController , UserEducationController" />
@@ -661,7 +644,11 @@
     <MESSAGE value="change Directory all repository User to UserManagement" />
     <MESSAGE value="create Exception for NotExistEmail" />
     <MESSAGE value="create Notification for sending Email" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Notification for sending Email" />
+    <MESSAGE value="update env to docker" />
+    <MESSAGE value="add confirmEmail method in AuthController" />
+    <MESSAGE value="add confirmEmail method in AuthController and AuthService" />
+    <MESSAGE value="fix names" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix names" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

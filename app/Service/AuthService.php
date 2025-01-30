@@ -29,13 +29,13 @@ class AuthService
         return $this->userRepository->createOtp($email);
     }
 
-//    public function login(array $data): JsonResponse
-//    {
-//        if (!$token = auth('api')->attempt($data)) {
-//            return response()->json(['error' => 'Unauthorized'], 401);
-//        }
-//        return $this->respondWithToken($token);
-//    }
+    public function login(array $data): JsonResponse
+    {
+        if (!$token = auth('api')->attempt($data)) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+        return $this->respondWithToken($token);
+    }
 
     public function loginByEmail(array $data): JsonResponse
     {
